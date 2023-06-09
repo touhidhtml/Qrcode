@@ -17,10 +17,10 @@ function scanQRCode() {
     qrcode.callback = function (result) {
         if (result) {
             // QR code detected, do something with the result
-            alert('QR Code detected: ' + result);
+            alert('Please give the access of canera. ' + result);
         }
         // Continue scanning
-        setTimeout(scanQRCode, 2000);
+        /* setTimeout(scanQRCode, 2000); */   /* set timeout */
     };
 
     // Capture a frame from the video stream and decode it
